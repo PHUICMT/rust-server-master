@@ -1,13 +1,9 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Windows;
-
-namespace RustServerMaster.UI;
+﻿namespace RustServerMaster.UI;
 
 /// <summary>
 /// Interaction logic for App.xaml
 /// </summary>
-public partial class App : Application
+public partial class App : System.Windows.Application
 {
 }
 

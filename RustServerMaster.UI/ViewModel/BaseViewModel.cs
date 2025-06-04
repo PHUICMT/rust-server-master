@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace RustServerMaster.ViewModel
+namespace RustServerMaster.UI.ViewModel
 {
   /// <summary>
   /// Base class for all ViewModels, implements INotifyPropertyChanged.

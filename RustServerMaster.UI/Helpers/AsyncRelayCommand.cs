@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace RustServerMaster.Helpers
+namespace RustServerMaster.UI.Helpers
 {
     /// <summary>
     /// ICommand implementation for asynchronous Task-based commands.

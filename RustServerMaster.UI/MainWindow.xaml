@@ -4,9 +4,27 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RustServerMaster.UI"
+        xmlns:views="clr-namespace:RustServerMaster.UI.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <DockPanel>
+        <StackPanel Background="#2D2D30"
+                Height="40"
+                DockPanel.Dock="Top"
+                Orientation="Horizontal">
+            <TextBlock Text="RustServerMaster (RSM)"
+                    Foreground="White"
+                    FontSize="16"
+                    VerticalAlignment="Center"
+                    Margin="10,0"/>
+        </StackPanel>
+        <TabControl>
+            <TabItem Header="Installation">
+                <views:InstallationView/>
+            </TabItem>
+            <!-- Future tabs for Mod Management, Configuration, Server Control -->
+        </TabControl>
+    </DockPanel>
 </Window>

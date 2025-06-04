@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Input;
 
-namespace RustServerMaster.Helpers
+namespace RustServerMaster.UI.Helpers
 {
   /// <summary>
   /// A simple ICommand implementation for synchronous actions.
@@ -31,6 +31,14 @@ namespace RustServerMaster.Helpers
     {
       add { CommandManager.RequerySuggested += value; }
       remove { CommandManager.RequerySuggested -= value; }
+    }
+
+    /// <summary>
+    /// Force WPF to re-query CanExecute on this command.
+    /// </summary>
+    public void RaiseCanExecuteChanged()
+    {
+      CommandManager.InvalidateRequerySuggested();
     }
   }
 }

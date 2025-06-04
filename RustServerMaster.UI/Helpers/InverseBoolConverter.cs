@@ -1,13 +1,12 @@
 using System;
 using System.Globalization;
-using System.Windows.Data;
 
-namespace RustServerMaster.Helpers
+namespace RustServerMaster.UI.Helpers
 {
     /// <summary>
     /// Converts a boolean to its inverse. Use for binding IsEnabled = !SomeBool.
     /// </summary>
-    public class InverseBoolConverter : IValueConverter
+    public class InverseBoolConverter : System.Windows.Data.IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
@@ -15,7 +14,8 @@ namespace RustServerMaster.Helpers
             {
                 return !boolValue;
             }
-            return Binding.DoNothing!;
+            // Explicitly use WPF's Binding.DoNothing
+            return System.Windows.Data.Binding.DoNothing;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -24,7 +24,7 @@ namespace RustServerMaster.Helpers
             {
                 return !boolValue;
             }
-            return Binding.DoNothing!;
+            return System.Windows.Data.Binding.DoNothing;
         }
     }
 }
