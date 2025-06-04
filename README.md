@@ -38,7 +38,7 @@ RSM is intended to expand over time; future versions will introduce additional f
   - [Repository Structure](#repository-structure)
   - [Getting Started](#getting-started)
     - [1. Clone the Repository](#1-clone-the-repository)
-    - [2. Install .NET 7 SDK](#2-install-net-7-sdk)
+    - [2. Install .NET 9 SDK](#2-install-net-9-sdk)
     - [3. Install SteamCMD](#3-install-steamcmd)
     - [4. Open the Project in VS Code](#4-open-the-project-in-vs-code)
     - [5. Restore Dependencies](#5-restore-dependencies)
@@ -145,12 +145,12 @@ git clone https://github.com/PHUICMT/rust-server-master.git
 cd rust-server-master
 ```
 
-### 2. Install .NET 7 SDK
+### 2. Install .NET 9 SDK
 
-Download and install .NET 7 SDK from:
+Download and install .NET 9 SDK from:
 
 ```
-https://dotnet.microsoft.com/download/dotnet/7.0
+https://dotnet.microsoft.com/download/dotnet/9.0
 ```
 
 Verify the installation:
