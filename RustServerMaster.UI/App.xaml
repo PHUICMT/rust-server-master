@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:RustServerMaster.UI"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <!-- InverseBoolConverter for XAML binding -->
+        <helpers:InverseBoolConverter x:Key="InverseBoolConverter"/>
     </Application.Resources>
 </Application>
