@@ -1,0 +1,23 @@
+# Visual Studio / VSCode
+.vs/
+.vscode/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userprefs
+
+# Rider
+.idea/
+
+# DotNet build outputs
+*.dll
+*.exe
+*.pdb
+
+# log files
+*.log
+
+# User-specific files
+*.rsuser
+*.resharper
