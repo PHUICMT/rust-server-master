@@ -1,6 +1,6 @@
 # RustServerMaster (RSM)
 
-**RustServerMaster (RSM)** is a Windows GUI application (built with WPF and .NET 7) designed to simplify the installation, configuration, and management of a Rust Dedicated Server. RSM provides a unified interface for:
+**RustServerMaster (RSM)** is a Windows GUI application (built with WPF and .NET 9) designed to simplify the installation, configuration, and management of a Rust Dedicated Server. RSM provides a unified interface for:
 
 1. **Server Installation & Update Module**  
    - Invoke SteamCMD to download or update Rust Dedicated Server  
@@ -53,7 +53,7 @@ RSM is intended to expand over time; future versions will introduce additional f
 
 Before you begin, ensure that you have the following installed on your Windows machine:
 
-1. **.NET 7 SDK**  
+1. **.NET 9 SDK**  
    Download and install from:  
    https://dotnet.microsoft.com/download/dotnet/9.0
 
@@ -121,7 +121,7 @@ rust-server-master/
 ```
 
 - **RustServerMaster.UI/**  
-  The main WPF (.NET 7) project containing all UI, ViewModels, Models, Services, and Helpers.
+  The main WPF (.NET 9) project containing all UI, ViewModels, Models, Services, and Helpers.
 
 - **.gitignore**  
   Specifies files and directories that Git should ignore (e.g., `bin/`, `obj/`, user-specific configs).
